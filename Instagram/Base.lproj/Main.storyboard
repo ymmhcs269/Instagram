@@ -61,7 +61,7 @@
         <!--Image Select View Controller-->
         <scene sceneID="VRK-8s-WTm">
             <objects>
-                <viewController storyboardIdentifier="Image" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r4R-dA-qIY" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageSelect" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r4R-dA-qIY" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Au-3M-8h8"/>
                         <viewControllerLayoutGuide type="bottom" id="8co-Vj-jyL"/>

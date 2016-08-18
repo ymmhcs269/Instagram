@@ -18,12 +18,7 @@ class ViewController: UIViewController {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewDidAppear(animated: Bool) {
+       override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
         if FIRAuth.auth()?.currentUser != nil {
@@ -39,6 +34,12 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
     
     func setupTab() {
         
