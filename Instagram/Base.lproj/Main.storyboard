@@ -27,7 +27,7 @@
         <!--Home View Controller-->
         <scene sceneID="ad3-sI-Xyr">
             <objects>
-                <viewController storyboardIdentifier="Home" id="uaU-qp-9zg" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uaU-qp-9zg" customClass="HomeViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wUq-cZ-LfX"/>
                         <viewControllerLayoutGuide type="bottom" id="2mB-8H-zI9"/>
@@ -61,7 +61,7 @@
         <!--Image Select View Controller-->
         <scene sceneID="VRK-8s-WTm">
             <objects>
-                <viewController storyboardIdentifier="Image" id="r4R-dA-qIY" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Image" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r4R-dA-qIY" customClass="ImageSelectViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Au-3M-8h8"/>
                         <viewControllerLayoutGuide type="bottom" id="8co-Vj-jyL"/>
@@ -120,7 +120,7 @@
         <!--Login View Controller-->
         <scene sceneID="6Nk-iE-CxE">
             <objects>
-                <viewController storyboardIdentifier="Login" id="QFl-Ah-wRY" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QFl-Ah-wRY" customClass="LoginViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jco-5p-YeZ"/>
                         <viewControllerLayoutGuide type="bottom" id="bu1-e7-Nuk"/>
@@ -152,7 +152,7 @@
                                 </constraints>
                                 <state key="normal" title="ログイン" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleLoginButton:" destination="QFl-Ah-wRY" eventType="touchUpInside" id="pQf-xE-Slj"/>
+                                    <action selector="handleLoginButton:" destination="QFl-Ah-wRY" eventType="touchUpInside" id="eH8-Bj-t6w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjE-EL-Kdm">
@@ -162,7 +162,7 @@
                                 </constraints>
                                 <state key="normal" title="アカウント作成" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCreateAcountButton:" destination="QFl-Ah-wRY" eventType="touchUpInside" id="wfW-8e-vad"/>
+                                    <action selector="handleCreateAcountButton:" destination="QFl-Ah-wRY" eventType="touchUpInside" id="p9v-IV-TP8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MNF-hK-JA8">
@@ -197,12 +197,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aO0-Tr-Iha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039.5" y="1045.5"/>
+            <point key="canvasLocation" x="1203.5" y="1017.5"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="T23-sG-5V7">
             <objects>
-                <viewController storyboardIdentifier="Post" id="TZw-XW-p0K" customClass="PostViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TZw-XW-p0K" customClass="PostViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5FK-JK-stH"/>
                         <viewControllerLayoutGuide type="bottom" id="2p5-dC-ZUC"/>
@@ -283,7 +283,7 @@
         <!--Setting View Controller-->
         <scene sceneID="zfa-gl-QF1">
             <objects>
-                <viewController storyboardIdentifier="Setting" id="gbu-08-Abu" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gbu-08-Abu" customClass="SettingViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kxa-ui-SUA"/>
                         <viewControllerLayoutGuide type="bottom" id="c76-aj-Mic"/>
@@ -341,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3x-VU-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640.5" y="1064.5"/>
+            <point key="canvasLocation" x="720.5" y="1056.5"/>
         </scene>
     </scenes>
     <resources>
