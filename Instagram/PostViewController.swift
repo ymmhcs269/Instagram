@@ -33,6 +33,10 @@ class PostViewController: UIViewController {
         // 時間を取得する
         let time = NSDate.timeIntervalSinceReferenceDate()
         
+        //コメントを取得する
+        //let comment = self.commentTextView.text!
+        
+        
         // 辞書を作成してFirebaseに保存する
         let postData = ["caption": textField.text!, "image": imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength), "name": name, "time": time]
         postRef.childByAutoId().setValue(postData)
@@ -53,8 +57,8 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         // 受け取った画像をImageViewに設定する
         imageView.image = image
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

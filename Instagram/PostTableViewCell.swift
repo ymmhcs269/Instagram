@@ -16,8 +16,13 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    
+    /*追加*/
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var commentLabel: UILabel!
+
     var postData: PostData!
+    var comments: String = ""
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,8 +31,7 @@ class PostTableViewCell: UITableViewCell {
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
+       
     }
     
     // 表示されるときに呼ばれるメソッドをオーバーライドしてデータをUIに反映する
@@ -45,6 +49,16 @@ class PostTableViewCell: UITableViewCell {
         
         let dateString:String = formatter.stringFromDate(postData.date!)
         dateLabel.text = dateString
+        
+            /*コメントの表示*/
+        let commentContents = postData!.comments
+        var commentInput : String = ""
+        for i in 0 ..< commentContents.count {
+            commentInput = commentInput + commentContents[i] + "\n"
+        }
+        commentLabel.text = commentInput
+        print(commentLabel.text)
+    
         
         if postData.isLiked {
             let buttonImage = UIImage(named: "like_exist")

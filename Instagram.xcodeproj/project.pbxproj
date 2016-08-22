@@ -38,6 +38,7 @@
 		19F06CA01D6047C900CD268C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06C9F1D6047C900CD268C /* PostData.swift */; };
 		19F06CA31D60481600CD268C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06CA11D60481600CD268C /* PostTableViewCell.swift */; };
 		19F06CA41D60481600CD268C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F06CA21D60481600CD268C /* PostTableViewCell.xib */; };
+		19FBE6901D656B7D009D379F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE68F1D656B7D009D379F /* CommentViewController.swift */; };
 		D1B1316846FC5B4C797E33EC /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81116CBDC1CCFFA0814E540 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		19F06C9F1D6047C900CD268C /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		19F06CA11D60481600CD268C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		19F06CA21D60481600CD268C /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		19FBE68F1D656B7D009D379F /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		66E926ADA7B08C67C3F39938 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		BC3B5210C48516FBC8F65AF8 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		F81116CBDC1CCFFA0814E540 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,20 +134,21 @@
 				19F06C7D1D6041DA00CD268C /* AdobeCreativeSDKImage.framework */,
 				19F06C841D60425300CD268C /* AdobeCreativeSDKImageResources.bundle */,
 				19F06C801D6041F900CD268C /* AdobeCreativeSDKCoreResources.bundle */,
-				19F06C7A1D60240E00CD268C /* Const.swift */,
-				19F06C9E1D60439500CD268C /* Instagram-Bridging-Header.h */,
 				19F06C5E1D601D7200CD268C /* ViewController.swift */,
 				19F06C601D601D7200CD268C /* Main.storyboard */,
-				19F06C631D601D7200CD268C /* Assets.xcassets */,
 				19F06C6E1D601DF400CD268C /* LoginViewController.swift */,
 				19F06C5C1D601D7200CD268C /* AppDelegate.swift */,
 				19F06C701D601E0A00CD268C /* HomeViewController.swift */,
 				19F06C721D601E1E00CD268C /* ImageSelectViewController.swift */,
+				19FBE68F1D656B7D009D379F /* CommentViewController.swift */,
 				19F06C741D601E3100CD268C /* PostViewController.swift */,
 				19F06C9F1D6047C900CD268C /* PostData.swift */,
 				19F06CA11D60481600CD268C /* PostTableViewCell.swift */,
-				19F06CA21D60481600CD268C /* PostTableViewCell.xib */,
 				19F06C761D601E4200CD268C /* SettingViewController.swift */,
+				19F06C7A1D60240E00CD268C /* Const.swift */,
+				19F06CA21D60481600CD268C /* PostTableViewCell.xib */,
+				19F06C9E1D60439500CD268C /* Instagram-Bridging-Header.h */,
+				19F06C631D601D7200CD268C /* Assets.xcassets */,
 				19F06C651D601D7200CD268C /* LaunchScreen.storyboard */,
 				19F06C681D601D7200CD268C /* Info.plist */,
 				19F06C781D6022A100CD268C /* GoogleService-Info.plist */,
@@ -319,6 +322,7 @@
 				19F06CA31D60481600CD268C /* PostTableViewCell.swift in Sources */,
 				19F06C771D601E4200CD268C /* SettingViewController.swift in Sources */,
 				19F06C711D601E0A00CD268C /* HomeViewController.swift in Sources */,
+				19FBE6901D656B7D009D379F /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

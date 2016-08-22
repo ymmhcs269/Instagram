@@ -14,9 +14,6 @@ import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
-    
-    
-    
     @IBOutlet weak var mailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var displayNameTextField: UITextField!

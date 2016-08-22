@@ -199,6 +199,88 @@
             </objects>
             <point key="canvasLocation" x="1203.5" y="1017.5"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="44V-lE-VRd">
+            <objects>
+                <viewController storyboardIdentifier="Comment" id="bRA-gZ-uZg" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c3H-ra-Z3U"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bG-5P-oT8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vyU-gU-gE8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRA-k8-bRx">
+                                <rect key="frame" x="37.5" y="100" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="SR3-Z7-sQu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsX-tm-SJv">
+                                <rect key="frame" x="37" y="421" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="VuV-hO-cer"/>
+                                </constraints>
+                                <state key="normal" title="コメント" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="commentButton:" destination="bRA-gZ-uZg" eventType="touchUpInside" id="5S1-c0-0iP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="コメントを入力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7M-wH-s1R">
+                                <rect key="frame" x="10" y="140" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdf-v7-ISx">
+                                <rect key="frame" x="37" y="471" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iFD-xO-eVY"/>
+                                </constraints>
+                                <state key="normal" title="戻る" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="backButton:" destination="bRA-gZ-uZg" eventType="touchUpInside" id="du5-D1-Elh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-xH-E5h">
+                                <rect key="frame" x="37" y="171" width="300" height="240"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="RLx-Oh-MH6"/>
+                                    <constraint firstAttribute="height" constant="240" id="VcM-Zi-FFr"/>
+                                    <constraint firstAttribute="width" constant="300" id="kjw-b0-CCY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CsX-tm-SJv" firstAttribute="top" secondItem="Bzd-xH-E5h" secondAttribute="bottom" constant="10" id="Afa-s6-Nuy"/>
+                            <constraint firstItem="p7M-wH-s1R" firstAttribute="leading" secondItem="vyU-gU-gE8" secondAttribute="leading" constant="10" id="CRx-5c-VbE"/>
+                            <constraint firstItem="gRA-k8-bRx" firstAttribute="top" secondItem="c3H-ra-Z3U" secondAttribute="bottom" constant="80" id="Ejp-CC-wBE"/>
+                            <constraint firstItem="p7M-wH-s1R" firstAttribute="top" secondItem="gRA-k8-bRx" secondAttribute="bottom" constant="10" id="Kuk-Pi-wlQ"/>
+                            <constraint firstItem="Bzd-xH-E5h" firstAttribute="top" secondItem="p7M-wH-s1R" secondAttribute="bottom" constant="10" id="MBc-d9-LE6"/>
+                            <constraint firstItem="Bzd-xH-E5h" firstAttribute="centerX" secondItem="vyU-gU-gE8" secondAttribute="centerX" id="VPy-Op-RLd"/>
+                            <constraint firstItem="gRA-k8-bRx" firstAttribute="centerX" secondItem="vyU-gU-gE8" secondAttribute="centerX" id="crH-ih-nbr"/>
+                            <constraint firstItem="Hdf-v7-ISx" firstAttribute="top" secondItem="CsX-tm-SJv" secondAttribute="bottom" constant="10" id="dvd-XB-XpO"/>
+                            <constraint firstItem="CsX-tm-SJv" firstAttribute="centerX" secondItem="vyU-gU-gE8" secondAttribute="centerX" id="eNl-mA-Na8"/>
+                            <constraint firstItem="Hdf-v7-ISx" firstAttribute="centerX" secondItem="vyU-gU-gE8" secondAttribute="centerX" id="zcs-cs-uaZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="commentTextView" destination="Bzd-xH-E5h" id="ZbK-s7-i2Z"/>
+                        <outlet property="nameTextField" destination="gRA-k8-bRx" id="IuI-ku-T1W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o98-5z-tRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.5" y="1003.5"/>
+        </scene>
         <!--Post View Controller-->
         <scene sceneID="T23-sG-5V7">
             <objects>

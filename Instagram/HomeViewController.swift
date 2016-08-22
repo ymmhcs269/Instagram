@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     @IBOutlet weak var tableView: UITableView!
         
@@ -83,6 +83,10 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // セル内のボタンのアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:event:)), forControlEvents:  UIControlEvents.TouchUpInside)
         
+            /*コメントボタンのアクション*/
+        cell.commentButton.addTarget(self, action:#selector(HomeViewController.commentHandleButton(_:event:)),forControlEvents: UIControlEvents.TouchUpInside)
+        
+        
         // UILabelの行数が変わっている可能性があるので再描画させる
         cell.layoutIfNeeded()
         
@@ -133,10 +137,32 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let time = (postData.date?.timeIntervalSinceReferenceDate)! as NSTimeInterval
             let likes = postData.likes
             
-            // 辞書を作成してFirebaseに保存する
-            let post = ["caption": caption!, "image": imageString!, "name": name!, "time": time, "likes": likes]
+                /*commentsを追加する*/
+            let comments = postData.comments
+            
+                /*辞書を作成してFirebaseに保存する(コメントの部分も追加)*/
+            let post = ["caption": caption!, "image": imageString!, "name": name!, "time": time, "likes": likes, "comments": comments]
+            
             let postRef = FIRDatabase.database().reference().child(CommonConst.PostPATH)
             postRef.child(postData.id!).setValue(post)
         }
+    }
+    
+        /*コメントボタンがタップされた時のメソッド*/
+    func commentHandleButton(sender: UIButton, event: UIEvent) {
+        
+        let touch = event.allTouches()?.first
+        let point = touch!.locationInView(self.tableView)
+        let indexPath = tableView.indexPathForRowAtPoint(point)
+        
+        let postData = postArray[indexPath!.row]
+        
+        let commentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Comment") as! CommentViewController
+        commentViewController.postData = postData
+        
+        self.presentViewController(commentViewController, animated: true, completion: nil)
+        
+        
+        
     }
 }
