@@ -29,11 +29,15 @@ class CommentViewController: UIViewController, UITableViewDelegate, UITextFieldD
                 SVProgressHUD.showErrorWithStatus("必要項目を入力して下さい")
                 return
             }else{
+                
                 postData!.comments.append("\(name):\(comment)")
-                SVProgressHUD.showSuccessWithStatus("投稿しました")
+                
             }
-        }
+                    }
+
         updateFirebase()
+        
+
         
             // 処理中を表示
             SVProgressHUD.show()
@@ -41,9 +45,11 @@ class CommentViewController: UIViewController, UITableViewDelegate, UITextFieldD
         
             // HUDを消す
             SVProgressHUD.dismiss()
+        
                     
             // 画面を閉じる
         self.dismissViewControllerAnimated(true, completion: nil)
+        
             }
     
     
@@ -54,8 +60,6 @@ class CommentViewController: UIViewController, UITableViewDelegate, UITextFieldD
         self.dismissViewControllerAnimated(true, completion: nil)
 
     }
-    
-    
     
 
 

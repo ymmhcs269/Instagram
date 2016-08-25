@@ -17,7 +17,6 @@
 		19F06C731D601E1E00CD268C /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06C721D601E1E00CD268C /* ImageSelectViewController.swift */; };
 		19F06C751D601E3100CD268C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06C741D601E3100CD268C /* PostViewController.swift */; };
 		19F06C771D601E4200CD268C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06C761D601E4200CD268C /* SettingViewController.swift */; };
-		19F06C791D6022A100CD268C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19F06C781D6022A100CD268C /* GoogleService-Info.plist */; };
 		19F06C7B1D60240E00CD268C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06C7A1D60240E00CD268C /* Const.swift */; };
 		19F06C7E1D6041DA00CD268C /* AdobeCreativeSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F06C7C1D6041DA00CD268C /* AdobeCreativeSDKCore.framework */; };
 		19F06C7F1D6041DA00CD268C /* AdobeCreativeSDKImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F06C7D1D6041DA00CD268C /* AdobeCreativeSDKImage.framework */; };
@@ -39,6 +38,7 @@
 		19F06CA31D60481600CD268C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F06CA11D60481600CD268C /* PostTableViewCell.swift */; };
 		19F06CA41D60481600CD268C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F06CA21D60481600CD268C /* PostTableViewCell.xib */; };
 		19FBE6901D656B7D009D379F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBE68F1D656B7D009D379F /* CommentViewController.swift */; };
+		19FBE6B61D6BE34D009D379F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19FBE6B51D6BE34D009D379F /* GoogleService-Info.plist */; };
 		D1B1316846FC5B4C797E33EC /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81116CBDC1CCFFA0814E540 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,6 @@
 		19F06C721D601E1E00CD268C /* ImageSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		19F06C741D601E3100CD268C /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		19F06C761D601E4200CD268C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		19F06C781D6022A100CD268C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19F06C7A1D60240E00CD268C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		19F06C7C1D6041DA00CD268C /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
 		19F06C7D1D6041DA00CD268C /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		19F06CA11D60481600CD268C /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		19F06CA21D60481600CD268C /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		19FBE68F1D656B7D009D379F /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		19FBE6B51D6BE34D009D379F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		66E926ADA7B08C67C3F39938 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		BC3B5210C48516FBC8F65AF8 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		F81116CBDC1CCFFA0814E540 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,7 @@
 				19F06C631D601D7200CD268C /* Assets.xcassets */,
 				19F06C651D601D7200CD268C /* LaunchScreen.storyboard */,
 				19F06C681D601D7200CD268C /* Info.plist */,
-				19F06C781D6022A100CD268C /* GoogleService-Info.plist */,
+				19FBE6B51D6BE34D009D379F /* GoogleService-Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -248,9 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F06C671D601D7200CD268C /* LaunchScreen.storyboard in Resources */,
+				19FBE6B61D6BE34D009D379F /* GoogleService-Info.plist in Resources */,
 				19F06C851D60425300CD268C /* AdobeCreativeSDKImageResources.bundle in Resources */,
 				19F06C811D6041F900CD268C /* AdobeCreativeSDKCoreResources.bundle in Resources */,
-				19F06C791D6022A100CD268C /* GoogleService-Info.plist in Resources */,
 				19F06CA41D60481600CD268C /* PostTableViewCell.xib in Resources */,
 				19F06C641D601D7200CD268C /* Assets.xcassets in Resources */,
 				19F06C621D601D7200CD268C /* Main.storyboard in Resources */,
